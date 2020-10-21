@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Get coordinates of the mouse pointer</title>
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+        <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+        <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+
+        <script type="text/javascript" src='./test.js'></script>
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+
+    </head>
+    <body>
+
+        <div id="map"></div>
+        <pre id="info"></pre>
+        <pre id="coordinates" class="coordinates"></pre>
+        <div id="distance" class="distance-container"></div>
+
+        <script src="https://npmcdn.com/@turf/turf@5.1.6/turf.min.js"></script> <!-- Turf, behövs för distance -->
+        <script type="text/javascript" src='./script.js'></script>
+
+    </body>
+</html>

@@ -1,0 +1,85 @@
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+
+
+#info {
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    margin: 0px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.74);
+    border-radius: 3px;
+}
+.log {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 150px;
+    width: 250px;
+    overflow: scroll;
+    background: white;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+}
+.log-entry {
+    padding: 5px;
+    border-bottom: 1px solid #d0d9e9;
+}
+.log-entry:nth-child(odd) {
+    background-color: #e1e7f1;
+}
+
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.marker {
+    display: block;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+}
+
+.coordinates {
+    background: rgba(0, 0, 0, 0.74);
+    color: #fff;
+    position: absolute;
+    bottom: 130px;
+    left: 10px;
+    padding: 5px 10px;
+    margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+    border-radius: 3px;
+    display: none;
+}
+
+.distance-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 210px;
+    left: 10px;
+    z-index: 1;
+}
+.distance-container > * {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 11px;
+    line-height: 18px;
+    display: block;
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
